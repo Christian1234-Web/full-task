@@ -23,12 +23,7 @@ const AdminSignUp = () => {
         })
             .then((res) => res.json())
             .then((result) => {
-                if (result.key) {
-                    setError(result.massage);
-                }
-                if (result.status === 'error') {
-                    setError(result.error);
-                }
+                setError(result.error);
             })
     };
 
