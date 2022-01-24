@@ -28,14 +28,7 @@ function Signup() {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result.error);
-        if (result.key) {
-          setError(result.massage);
-        }
-        if (result.status === 'error') {
-          setError(result.error);
-        }
-
+       setError(result.massage);
       })
   };
 
