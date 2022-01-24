@@ -53,8 +53,7 @@ const routes = (app) => {
                 })
             }
             return res.json({
-                error: "Email has been sent, kindly activate your account",
-                key:token
+                error: "Email has been sent, kindly activate your account"
             })
         });
 
